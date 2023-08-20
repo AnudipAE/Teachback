@@ -1,4 +1,4 @@
-
+//Sample code of a simple school management system using procedural C language.
 #include <stdio.h>
 
 #include <string.h>
