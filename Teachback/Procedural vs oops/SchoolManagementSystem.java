@@ -5,13 +5,10 @@ import java.util.Scanner;
 class Student {
 
 String name;
-
 int age;
-
 float grade;
-
+     
 }
-
 
 class Teacher {
 
@@ -19,6 +16,7 @@ String name;
 int age;
 String qualification;
 String subject;
+     
 } 
 
 public class SchoolManagementSystem {
@@ -41,49 +39,38 @@ public static void addStudent(Student[] students, int count) {
 public static void addTeacher(Teacher[] teachers, int count) {
 
      Scanner scanner = new Scanner(System.in);
-     teachers[count] = new Teacher();
-
-    
+     
+     teachers[count] = new Teacher(); 
 
      System.out.print("Enter teacher name: ");
-
      teachers[count].name = scanner.next();
 
      System.out.print("Enter teacher age: ");
-
      teachers[count].age = scanner.nextInt();
 
      System.out.print("Enter teacher qualification: ");
-
      teachers[count].qualification = scanner.next();
 
-          System.out.print("Enter teacher subject: ");
-
+     System.out.print("Enter teacher subject: ");
      teachers[count].subject = scanner.next();
-
 
 }
 
  
-
 public static void main(String[] args) {
 
      Student[] students = new Student[100];
-
      Teacher[] teachers = new Teacher[50];
 
      int studentCount = 0;
-
      int teacherCount = 0;
 
- 
 
      System.out.println("School Management System");
-
- 
+     System.out.println("-----------------------------");
 
      char choice;
-
+     
      Scanner scanner = new Scanner(System.in);
 
      do {
@@ -94,7 +81,6 @@ public static void main(String[] args) {
 
          choice = scanner.next().charAt(0);
 
- 
 
          switch (choice) {
 
