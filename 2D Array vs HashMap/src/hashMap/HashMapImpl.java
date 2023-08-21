@@ -6,10 +6,13 @@ import java.util.Map;
 
 import nameAndNumberGenerator.NameAndNumberGenerator;
 
+//class HashMapImpl
 public class HashMapImpl {
 
+	//creating NameAndNumberGenerator object
 	static NameAndNumberGenerator n1 = new NameAndNumberGenerator();
 
+	//method for creating phone book with hashmap
 	public Map<String, String> hashMap(int numEntries) {
 		Map<String, String> phoneBookMap = new HashMap<>();
 
@@ -22,14 +25,15 @@ public class HashMapImpl {
 
 		return phoneBookMap;
 
-	}
+	}//end of method hashMap
 
+	//method for displaying the hashMap
 	public void displayHashMap(Map<String, String> hashMap) {
 		for (Map.Entry<String, String> entry : hashMap.entrySet()) {
 			String key = entry.getKey();
 			String value = entry.getValue();
 			System.out.println(value + "\t " + "\t " + key);
 		}
-	}
+	}//end of method displayHashMap
 
-}
+}//end of class HashMapImpl
